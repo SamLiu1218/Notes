@@ -4,8 +4,6 @@ This note covers how to set up remote jupyter that runs on HPC but is accessible
  
 ```mamba install -c conda-forge jupyterlab```
 
-You will also probabily need to install ipykernel with ```mamba install ipykernel```
-
 (```mamba``` is a conda substitute but much faster. Use conda if you still like it, or install mamba with ```conda install mamba -c conda-forge```.)
 
 2. Create jupyter config with
@@ -26,15 +24,14 @@ You will also probabily need to install ipykernel with ```mamba install ipykerne
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=64000
 
-### SLURM HEADER
-
 mkdir -p ~/sbatch-out/jupyter-logs
-
 localcores=${SLURM_TASKS_PER_NODE}
 export PATH=#HOME/miniconda3/bin:$PATH ## change it to your anaconda installation if needed
+
 PORT=12304    ## Modify the port on your need
 HOST=$(hostname -A)
 jupyter lab --ip=$HOST --port=$PORT --no-browser --notebook-dir=$HOME   ## change --notebook-dir on your need
+
 ```
 
 
@@ -71,4 +68,22 @@ Try accessing the following jupyter-lab server:
 [I 2022-05-02 15:05:40.528 ServerApp] http://sumner015.sumner.jax.org:11218/lab
 ```
 Copy the link to your browser and have fun.
+
+
+8. For jupyter lab to detect your conda environments as kernels:
+
+First activate the enviroment
+
+```conda activate YOUR_ENV```
+
+then ```mamba install ipykernel```
+
+then ```ipython kernel install --user --name=YOUR_KERNEL```
+
+replace YOUR_ENV and YOUR_KERNEL to your env and kernel name.
+
+(Don't forget to deactivate the env.)
+
+
+
 
