@@ -1,0 +1,28 @@
+name: Image
+channels:
+  - conda-forge
+  - bioconda
+  - anaconda
+dependencies:
+  - python
+  - pandas
+  - h5py
+  - geojson
+  - scikit-image
+  - openslide-python
+  - shapely
+  - openslide
+  - scikit-image
+  - scikit-learn
+  - tensorflow
+  - umap-learn
+  - seaborn
+  - tqdm
+  - fpdf2
+  - ipywidgets
+  - scipy
+  - scanpy
+  - pyarrow
+  - numpy
+  - ipyfilechooser
+  - colorcet
