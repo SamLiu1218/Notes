@@ -1,4 +1,4 @@
-name: ST
+name: panel
 channels:
   - pyviz
   - conda-forge
