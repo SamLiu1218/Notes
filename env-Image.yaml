@@ -26,3 +26,5 @@ dependencies:
   - numpy
   - ipyfilechooser
   - colorcet
+  - opencv
+  - tifffile
