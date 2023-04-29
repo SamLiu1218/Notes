@@ -1,4 +1,4 @@
-name: ctcl-tf
+name: py36
 channels:
   - conda-forge
   - bioconda
