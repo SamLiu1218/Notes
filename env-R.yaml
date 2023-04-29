@@ -1,0 +1,12 @@
+name: R
+channels:
+  - r
+  - bioconda
+  - conda-forge 
+dependencies:
+  - r
+  - r-seurat
+  - r-irkernel
+  - r-devtools
+  - r-arrow
+  - r-ggplot2
