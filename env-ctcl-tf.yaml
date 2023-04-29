@@ -1,0 +1,28 @@
+name: ctcl-tf
+channels:
+  - conda-forge
+  - bioconda
+  - anaconda
+dependencies:
+  - python=3.6
+  - pandas
+  - h5py<3.0.0
+  - geojson
+  - scikit-image
+  - openslide-python
+  - shapely
+  - openslide
+  - scikit-image
+  - scikit-learn
+  - tensorflow=2.4
+  - umap-learn
+  - seaborn
+  - tqdm
+  - fpdf2
+  - ipywidgets
+  - scipy
+  - scanpy
+  - pyarrow
+  - numpy
+  - ipyfilechooser
+  - colorcet
