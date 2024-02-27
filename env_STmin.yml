@@ -1,0 +1,46 @@
+name: STmin
+channels:
+  - conda-forge
+  - bioconda
+  - anaconda
+  - grst
+dependencies:
+  - python
+  - tensorflow 
+  - tensorflow-probability 
+  - numpy
+  - scipy
+  - scanpy
+  - anndata
+  - pandas
+  - fa2
+  - matplotlib
+  - seaborn
+  - squidpy
+  - pandas
+  - h5py
+  - scikit-image
+  - scikit-learn
+  - umap-learn
+  - seaborn
+  - tqdm
+  - fpdf2
+  - ipywidgets
+  - scipy
+  - scanpy
+  - pyarrow
+  - ipykernel
+  - colorcet
+  - phenograph
+  - shapely
+  - numba
+  - json
+  - tifffile
+  - pydeck
+  - pillow
+  - opencv
+  - fastcluster
+  - openslide-python 
+  - openslide
+  - geojson
+  - numba
