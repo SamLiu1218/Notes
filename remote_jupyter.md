@@ -74,16 +74,40 @@ Copy the link to your browser and have fun.
 
 First activate the enviroment
 
-```conda activate YOUR_ENV```
+```
+conda activate YOUR_ENV
+```
 
-then ```mamba install ipykernel```
+then 
+```
+mamba install ipykernel
+```
 
-then ```ipython kernel install --user --name=YOUR_KERNEL```
+then 
+```
+ipython kernel install --user --name=YOUR_KERNEL
+```
 
 replace YOUR_ENV and YOUR_KERNEL to your env and kernel name.
 
 (Don't forget to deactivate the env.)
 
 
+9. Additional for R environments
+
+you can install R with 
+```
+conda create -n R -c conda-forge r-base r-irkernel
+```
+
+It is suggested to install R packages through conda if R is installed through conda.
+
+After installation, start R and run 
+
+```R
+IRkernel::installspec(name = 'ir', displayname = 'R')
+```
+
+where ```name``` is the conda env name and ```displayname``` is the kernel name shown in jupyter.
 
 
