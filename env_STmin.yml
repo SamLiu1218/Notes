@@ -44,3 +44,4 @@ dependencies:
   - openslide
   - geojson
   - numba
+  - rasterio
