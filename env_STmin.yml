@@ -43,5 +43,4 @@ dependencies:
   - openslide-python 
   - openslide
   - geojson
-  - numba
   - rasterio
