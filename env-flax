@@ -1,9 +1,6 @@
 name: flax
--- channels:
---   - conda-forge
---   - bioconda
---   - anaconda
---   - grst
+channels:
+  - conda-forge
 dependencies:
   - python
   - numpy
@@ -29,10 +26,8 @@ dependencies:
   - pyarrow
   - ipykernel
   - colorcet
-  - phenograph
   - shapely
   - numba
-  - json
   - tifffile
   - pydeck
   - pillow
