@@ -50,7 +50,7 @@ launch_jupyter() {
   sleep 2
   if [ -f ${outputfile} ]; then
         echo "Try accessing the following jupyter-lab server:"
-        grep 'sumner.jax.org' $outputfile | sed 's/ :/:/'
+        grep 'sumner2.jax.org' $outputfile --color=never
   else
         echo "Looks like your job '$jobid' is queued. Monitor when it starts with"
         echo -e "\tsqueue -u $USER"
