@@ -4,7 +4,7 @@ This note covers how to set up remote jupyter that runs on HPC but is accessible
  
 ```mamba install -c conda-forge jupyterlab```
 
-(```mamba``` is a conda substitute but much faster. Use conda if you still like it, or install mamba with ```conda install mamba -c conda-forge```.)
+(```mamba``` is a conda substitute but much faster. Installation: https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html.)
 
 2. Create jupyter config with
 
